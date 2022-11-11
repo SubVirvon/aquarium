@@ -1,0 +1,8 @@
+C:\Users\Danii\source\repos\aquarium\aquarium\bin\Debug\aquarium.exe.config
+C:\Users\Danii\source\repos\aquarium\aquarium\bin\Debug\aquarium.exe
+C:\Users\Danii\source\repos\aquarium\aquarium\bin\Debug\aquarium.pdb
+C:\Users\Danii\source\repos\aquarium\aquarium\obj\Debug\aquarium.csproj.AssemblyReference.cache
+C:\Users\Danii\source\repos\aquarium\aquarium\obj\Debug\aquarium.csproj.SuggestedBindingRedirects.cache
+C:\Users\Danii\source\repos\aquarium\aquarium\obj\Debug\aquarium.csproj.CoreCompileInputs.cache
+C:\Users\Danii\source\repos\aquarium\aquarium\obj\Debug\aquarium.exe
+C:\Users\Danii\source\repos\aquarium\aquarium\obj\Debug\aquarium.pdb
