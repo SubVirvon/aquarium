@@ -36,24 +36,36 @@ namespace aquarium
             {
                 Console.SetCursorPosition(0, 10);
 
-                for (int i = 0; i < _fishes.Count; i++)
-                {
-                    _fishes[i].SkipTime(time);
-
-                    Console.Write($"{i + 1} ");
-
-                    _fishes[i].ShowInfo();
-                }
+                SkipTime(time);
+                ShowInfo();
 
                 Console.SetCursorPosition(0, 0);
 
-                ShowCommands();
+                СhooseCommands();
 
                 Console.Clear();
             }
         }
 
-        private void ShowCommands()
+        private void SkipTime(int time)
+        {
+            foreach(var fish in _fishes)
+            {
+                fish.SkipTime(time);
+            }
+        }
+
+        private void ShowInfo()
+        {
+            for(int i = 0; i < _fishes.Count; i++)
+            {
+                Console.Write($"{i + 1} ");
+
+                _fishes[i].ShowInfo();
+            }
+        }
+
+        private void СhooseCommands()
         {
             const string CommandAddFish = "1";
             const string CommandRemoveFish = "2";
@@ -104,7 +116,7 @@ namespace aquarium
                 {
                     isNumber = true;
 
-                    if (index >= 0 && index < _fishes.Count - 1)
+                    if (index > 0 && index <= _fishes.Count)
                     {
                         _fishes.RemoveAt(index - 1);
                         Console.WriteLine("Рыбка удалена");
@@ -128,6 +140,7 @@ namespace aquarium
     {
         private int _age;
         private int _lifetime;
+
         public Fish()
         {
             _lifetime = SetLifetime();
